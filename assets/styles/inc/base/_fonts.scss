@@ -1,0 +1,14 @@
+@layer base {
+    @each $key, $name in ('': 'Regular', 'i': 'Italic', 'b': 'Bold', 'z': 'Bold Italic') {
+        @font-face {
+            font-family: 'Georgia ' + $name;
+            src: local('Georgia ' + $name), url('/assets/fonts/georgia/georgia' + $key + '.woff') format('woff');
+        }
+    } 
+    @each $key, $name in ('IMFellEnglishSC': 'Regular', 'Montserrat': 'Light') {
+        @font-face {
+            font-family: $key + '-' + $name;
+            src: local($key + '-' + $name), url('/assets/fonts/' + $key + '-' + $name + '.ttf') format('truetype');
+        }
+    } 
+}

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './inc/base/fonts';
+@import './inc/layout/header';
+
+body {
+    @apply bg-violet font-montserrat-l;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-imfellenglishsc-r;
+}
